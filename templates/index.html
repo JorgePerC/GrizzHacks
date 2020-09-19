@@ -1,15 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-    {% for i in range(1,11) -%}
-      <p>{{2}} * {{i}} = {{2*i}}</p>
-    {% endfor -%}
-    
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}DevRoots Home{% endblock title %}
+{% block link %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+{% endblock link %}
+{% block content %}
+{% end block content %}

@@ -1,0 +1,18 @@
+{
+    "description": "La pregunta es...",
+
+    "opciones" : {
+        "a" : "A",
+        "b" : "B",
+        "c" : "C",
+        "d" : "D"
+    },
+
+    "costs" : {
+        "Political": 1,
+        "Social": 1,
+        "Environmental": 1,
+        "Economical": 1
+    }
+    
+}

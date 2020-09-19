@@ -12,17 +12,16 @@
           display: grid;
           grid-template-columns: 50px auto auto 50px;
           grid-gap: 10px;
-          background-color: #2196F3;
+          background-image: url("static/W2.jpeg");
           padding: 10px;
         }
         
         .grid-container > div {
-            background-image: url("static/bar.png");
+            background-image: url("static/W1.jpeg");
             background-repeat: no-repeat;
-            background-color: #fc2b23;
             height: 300px; 
             background-position: center; 
-            background-size: cover;
+            /*background-size: cover;*/
             text-align: center;
             padding: 20px 0;
             font-size: 30px;
@@ -44,14 +43,10 @@
 </head>
 <body>
     <!-- COMENTARIO -->
-    <p>{{titulo}}</p>
-    <p>{{body1}}</p>
-    <p>{{body2}}</p> 
     <div class = grid-container>
-        <div class="item2"> prubas mayores </div>
-        <div class="item2">prubas</div> 
-        <div class="item5">pruebas parte 2</div>
-        <div class="item6">pruebas parte 3</div>
+        <div class="item2"> {{titulo}}</div>
+        <div class="item5">{{body1}}</div>
+        <div class="item6">{{body2}}</div>
     </div>
     
     

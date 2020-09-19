@@ -1,5 +1,7 @@
-from flask import Flask
-from flask import render_template
+import json
+import requests
+from flask import *
+
 # import pyrebase
 
 app = Flask(__name__)
@@ -10,13 +12,15 @@ def index():
 
 @app.route("/hola")
 def hola():
-    lol =  20
-    lol += 500
+    with open("static/data/levels.json") as f:
+        data = json.load(f)
+    
     return "hola, xd " + str(lol)
 
 @app.route("/pruba")
 def aprubas():
-    return render_template("prubas.html", titulo = "este es un titulo", body1 = "parte 1 del juego", body2 = 'parte 2 del juego')
+    titulo = ''
+    return render_template("prubas.html", titulo = titulo, body1 = "parte 1 del juego", body2 = 'parte 2 del juego')
 
 @app.route("/test")
 def test():
@@ -24,4 +28,3 @@ def test():
 
 if __name__ == "__main__":
     app.run(debug = True)
-    
