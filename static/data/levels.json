@@ -1,18 +1,74 @@
 {
-    "description": "La pregunta es...",
-
-    "opciones" : {
-        "a" : "A",
-        "b" : "B",
-        "c" : "C",
-        "d" : "D"
-    },
-
-    "costs" : {
-        "Political": 1,
-        "Social": 1,
-        "Environmental": 1,
-        "Economical": 1
-    }
-    
-}
+    "q0":
+       {
+          "question":"tell em something",
+          "answer1":
+             {
+                "answer":"lol",
+                "type":"select",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer2":
+             {
+                "answer":"wow",
+                "type":"select",
+                "mods":[0,0,0,0,0,0]
+             }
+       },
+    "q1":
+       {
+          "question":"La pregunta es...",
+          "answer1":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"select",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer2":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"input",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer3":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"input",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer4":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"select / input",
+                "mods":[0,0,0,0,0,0]
+             }
+       },
+    "q2":
+       {
+          "question":"ya",
+          "answer1":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"select / input",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer2":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"select / input",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer3":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"select / input",
+                "mods":[0,0,0,0,0,0]
+             },
+          "answer4":
+             {
+                "answer":"la respuesta que es esto",
+                "type":"select / input",
+                "mods":[0,0,0,0,0,0]
+             }
+       }
+ }
