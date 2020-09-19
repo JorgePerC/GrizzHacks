@@ -26,6 +26,7 @@ https://www.transparency.org/en/
 
     A) You tell him about the location of the new airport.
     B) You don't mention it.
+    C) 
 
 
 1.- During the audit of --- you realized that someone has been laundring money. However, your boss is involved. A) You report the whole ---.  B) You accept a soborn
