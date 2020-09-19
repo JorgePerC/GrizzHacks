@@ -4,33 +4,22 @@ from bs4 import BeautifulSoup
 # Debe de poder ser asada por el problema
 qry = "corruption"
 
-URL = "https://knowledgehub.transparency.org/search?q={}".format(qry)
+URL = "https://knowledgehub.transparency.org/search?q={}#".format(qry)
 
 HTML_from_page = requests.get(URL)
 
-#Method 1:
 soup = BeautifulSoup(HTML_from_page.content, "html.parser")
 
 results = soup.find(id = "filterable-entries")
 
-# print(results.prettify())
-
-
 #Method 2:
 card_Results = results.find_all('a', class_='knowledge-card')
 
-for card in card_Results:
-    print(card, end='\n'*2)
-    
-    
-    link = card.find('a')['href']
+for card in card_Results:    
+    link = card['href']
     
     title_elem = card.find('h2', class_='heading heading--snippet')
 
-    print(title_elem.text)
-
-    if None ==type(link):
-        continue
+    print(title_elem.text, "|", link)
     
-    print(str(link))
     print()

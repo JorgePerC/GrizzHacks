@@ -2,6 +2,7 @@
     "q0":
        {
           "question":"tell em something",
+          "tip" : "_inserte tip_",
           "answer1":
              {
                 "answer":"lol",
@@ -18,6 +19,7 @@
     "q1":
        {
           "question":"La pregunta es...",
+          "tip" : "_inserte tip_",
           "answer1":
              {
                 "answer":"la respuesta que es esto",
@@ -46,6 +48,7 @@
     "q2":
        {
           "question":"ya",
+          "tip" : "_inserte tip_",
           "answer1":
              {
                 "answer":"la respuesta que es esto",
