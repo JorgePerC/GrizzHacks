@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <title>lol no se que estoy haciendo</title>
+
+    <style>
+        .grid-container {
+          display: grid;
+          grid-template-columns: 50px auto auto 50px;
+          grid-gap: 10px;
+          background-color: #2196F3;
+          padding: 10px;
+        }
+        
+        .grid-container > div {
+          background-image: url("static/bar.png");
+          background-repeat: no-repeat;
+          background-color: #fc2b23;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
+        }
+        
+        .item2 {
+          grid-column-start: 2;
+          grid-column-end: 4;
+        }
+        .item5 {
+          grid-column-start: 2;
+          grid-column-end: 3;
+        }
+        .item6 {
+          grid-column-start: 3;
+          grid-column-end: 4;
+        }
+    </style>
+</head>
+<body>
+    <!-- COMENTARIO -->
+    <p>{{titulo}}</p>
+    <p>{{body1}}</p>
+    <p>{{body2}}</p> 
+    <div class = grid-container>
+        <div class="item2"> prubas mayores </div>
+        <div class="item2">prubas</div> 
+        <div class="item5">pruebas parte 2</div>
+        <div class="item6">pruebas parte 3</div>
+    </div>
+    
+    
+</body>
+</html>
