@@ -3,9 +3,8 @@ import requests
 from game import mainGameMannager
 from flask import *
 
-# import pyrebase
-
 mainGame =  mainGameMannager()
+
 
 app = Flask(__name__)
 

@@ -1,18 +1,5 @@
 # GrizzHacks
 
-## Description:
-
-This is a game to promote awareness of 
-
-*Links*
-
-https://korruptiontorjunta.fi/en/examples-of-corruption
-
-https://www.transparency.org/en/
-
-
-**Cases:**
-
 1.- You´re hosting a competition to select a construction company to build a hospital. The A company offers you 15% of the total cost of the hospital if you select them. What would you do?
 
     A) You take the 15% deal and select the A company.
@@ -48,3 +35,6 @@ https://www.transparency.org/en/
     D)
 
 5.- During the audit of --- you realized that someone has been laundring money. However, your boss is involved. A) You report the whole ---.  B) You accept a brive
+
+We like to have fun! (and potatoes)
+
