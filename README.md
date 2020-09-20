@@ -1,6 +1,6 @@
 # GrizzHacks
 
-me mad ethis project thinking in unfairness. 
+we made this project thinking in unfairness. 
 
 The reason of this game, is to create various challenges that make trivial questions appear, to show how cheating is a problem, and to show what happens in out world.
 
