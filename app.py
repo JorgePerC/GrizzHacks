@@ -2,29 +2,21 @@ import json
 import requests
 from flask import *
 
-# import pyrebase
-
 app = Flask(__name__)
+
+app.config['DEBUG'] = True
+app.config['SECRET_KEY'] = 'DevRootsSecretKey'
 
 @app.route("/")
 def index():
+    session['menuList'] = [{'url': '/', 'class': 'navbarItem', 'label': 'Home'},{'url': '/about', 'class': 'navbarItem', 'label': 'About Us'},{'url': '/resources', 'class': 'navbarItem', 'label': 'Resources'},{'url': '/login', 'class': 'navbarItem', 'label': 'Account'}]
     return render_template("index.html")
 
-@app.route("/hola")
-def hola():
-    with open("static/data/levels.json") as f:
-        data = json.load(f)
-    
-    return "hola, xd " + str(lol)
+@app.route("/resources")
+def resources():
+    return render_template("resources.html")
 
-@app.route("/pruba")
-def aprubas():
-    titulo = ''
-    return render_template("prubas.html", titulo = titulo, body1 = "parte 1 del juego", body2 = 'parte 2 del juego')
-
-@app.route("/test")
-def test():
-    return render_template("test.html")
 
 if __name__ == "__main__":
     app.run(debug = True)
+
