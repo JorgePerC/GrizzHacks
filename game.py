@@ -309,26 +309,26 @@ if __name__ == '__main__':
     title, tip, questions = game.startGame(3)
     print(title, tip)
 
-    for i in range(len(questions)):
-        print (i, questions[i][1])
+    # for i in range(len(questions)):
+    #     print (i, questions[i][1])
 
-    title, tip, questions = game.updateMetricsAndReturnNext(questions[int(input('answer > '))][3])
-    print(title, tip)
+    # title, tip, questions = game.updateMetricsAndReturnNext(questions[int(input('answer > '))][3])
+    # print(title, tip)
 
-    for i in range(len(questions)):
-        print (i, questions[i][1])
+    # for i in range(len(questions)):
+    #     print (i, questions[i][1])
 
-    title, tip, questions = game.updateMetricsAndReturnNext(questions[int(input('answer > '))][3])
-    print(title, tip)
+    # title, tip, questions = game.updateMetricsAndReturnNext(questions[int(input('answer > '))][3])
+    # print(title, tip)
 
-    for i in range(len(questions)):
-        print (i, questions[i][1])
+    # for i in range(len(questions)):
+    #     print (i, questions[i][1])
 
-    title, tip, questions = game.updateMetricsAndReturnNext(questions[int(input('answer > '))][3])
+    # title, tip, questions = game.updateMetricsAndReturnNext(questions[int(input('answer > '))][3])
 
-    game.calculateVotes()
+    # game.calculateVotes()
 
-    print(game.playerVotes, game.ai1votes, game.ai2votes)
+    # print(game.playerVotes, game.ai1votes, game.ai2votes)
 
-    print(game.gimmeWinner())
+    # print(game.gimmeWinner())
 
