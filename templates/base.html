@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock title %}</title>
@@ -10,13 +10,14 @@
 <body>
     <nav class="topNavbar">
     {% for menuItem in session['menuList'] %}
-        {% if menuItem.label == 'Cuenta' %}
+        {% if menuItem.label == 'Account' %}
             <li><a href="{{ menuItem.url }}" class="{{ menuItem.class }}">{% if 'user' in session %}{{ session['userId'] }}{% else %}{{ menuItem.label }}{% endif %}</a></li>
         {% else %}
             <li><a href="{{ menuItem.url }}" class="{{ menuItem.class }}">{{ menuItem.label }}</a></li>
         {% endif %}
     {% endfor %}
     </nav>
+    <p>{{ session }}</p>
 {% block content %}
 <!-- Here goes the page content -->
 {% endblock content %}
